@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Sekolah</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="scripts.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="logo.png" alt="Logo Sekolah" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="#beranda">Beranda</a></li>
+          <li class="dropdown">
+            <a href="#profil">Profil</a>
+            <ul class="dropdown-content">
+              <li><a href="#sejarah">Sejarah</a></li>
+              <li><a href="#visi-misi">Visi Misi</a></li>
+              <li><a href="#guru">Guru</a></li>
+              <li><a href="#staff">Staff</a></li>
+            </ul>
+          </li>
+          <li><a href="#pendaftaran">Pendaftaran</a></li>
+          <li class="dropdown">
+            <a href="#pengumuman">Pengumuman</a>
+            <ul class="dropdown-content">
+              <li><a href="#berita">Berita</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="beranda" class="carousel">
+        <div class="carousel-item active">
+          <h2>Berita 1</h2>
+          <p>Deskripsi berita 1...</p>
+        </div>
+        <div class="carousel-item">
+          <h2>Berita 2</h2>
+          <p>Deskripsi berita 2...</p>
+        </div>
+        <div class="carousel-item">
+          <h2>Berita 3</h2>
+          <p>Deskripsi berita 3...</p>
+        </div>
+        <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+        <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+      </section>
+
+      <section id="sejarah">
+        <h2>Sejarah</h2>
+        <p>Sejarah sekolah...</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Sekolah Kami. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -29,4 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
       parent.classList.toggle("active");
     });
   });
+
+  // Automatically change slides every 5 seconds
+  setInterval(nextSlide, 10000);
 });

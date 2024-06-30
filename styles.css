@@ -7,9 +7,11 @@ body {
 
 :root {
   --bg-color: #2e8b57;
+  --hover-color: #1e6b47; /* Background color for hover */
+  --font-hover-color: #000; /* Font color for hover */
 }
 
-header {
+.header {
   background-color: var(--bg-color);
   color: white;
   padding: 10px 0;
@@ -19,7 +21,7 @@ header {
   z-index: 1000;
 }
 
-nav {
+.nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -28,53 +30,80 @@ nav {
   padding: 0 20px;
 }
 
-nav .logo img {
+.nav .logo {
+  display: flex;
+}
+
+.nav .logo img {
   width: 50px;
 }
 
-nav .nav-links {
+.nav .logo h1 {
+  font-size: 19px;
+}
+
+.nav .nav-links {
   list-style: none;
   display: flex;
   margin: 0;
 }
 
-nav .nav-links li {
+.nav .nav-links li {
   margin-left: 20px;
   position: relative;
 }
 
-nav .nav-links a {
+.nav .nav-links a {
   color: white;
   text-decoration: none;
   padding: 10px 20px;
   display: block;
+  transition: color 0.3s ease; /* Smooth transition for hover */
 }
 
-nav .nav-links .dropdown-content {
+.nav .nav-links a:hover {
+  color: var(--font-hover-color); /* Hover effect for main menu items */
+}
+
+.nav .nav-links .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #2e8b57;
+  background-color: var(--bg-color);
   top: 100%;
   left: 0;
   list-style: none;
   padding: 0;
   margin: 0;
   border: 1px solid #1e6b47;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-nav .nav-links .dropdown-content li {
+.nav .nav-links .dropdown-content li {
   margin: 0;
 }
 
-nav .nav-links .dropdown-content a {
+.nav .nav-links .dropdown-content a {
   padding: 10px 20px;
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
 }
 
-nav .nav-links .dropdown:hover .dropdown-content {
+.nav .nav-links .dropdown-content a:hover {
+  background-color: var(--hover-color); /* Hover effect for submenu items */
+}
+
+.nav .nav-links .dropdown:hover .dropdown-content {
   display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
-main {
+.nav .nav-links .arrow-down {
+  margin-left: 5px;
+}
+
+.main {
   padding-top: 70px; /* Adjust to height of the navbar */
 }
 
@@ -114,7 +143,7 @@ main {
   right: 10px;
 }
 
-footer {
+.footer {
   background-color: var(--bg-color);
   color: white;
   text-align: center;

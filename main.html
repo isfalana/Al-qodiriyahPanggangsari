@@ -3,20 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Website Sekolah</title>
+    <title>Ponpes Al-Qodiriyah Panggangsari</title>
+    <link rel="icon" type="image/icon" href="img/logoPonpes.png" />
     <link rel="stylesheet" href="styles.css" />
     <script defer src="scripts.js"></script>
   </head>
   <body>
-    <header>
-      <nav>
+    <div class="header">
+      <div class="nav">
         <div class="logo">
-          <img src="logo.png" alt="Logo Sekolah" />
+          <img src="img/logoPonpes.png" alt="Logo Al-Qodiriyah" />
+          <h1>PP Al-Qodiriyah</h1>
         </div>
         <ul class="nav-links">
           <li><a href="#beranda">Beranda</a></li>
           <li class="dropdown">
-            <a href="#profil">Profil</a>
+            <a href="#profil">Profil <span class="arrow-down">&#9660;</span></a>
             <ul class="dropdown-content">
               <li><a href="#sejarah">Sejarah</a></li>
               <li><a href="#visi-misi">Visi Misi</a></li>
@@ -26,20 +28,20 @@
           </li>
           <li><a href="#pendaftaran">Pendaftaran</a></li>
           <li class="dropdown">
-            <a href="#pengumuman">Pengumuman</a>
+            <a href="#pengumuman">Pengumuman <span class="arrow-down">&#9660;</span></a>
             <ul class="dropdown-content">
               <li><a href="#berita">Berita</a></li>
             </ul>
           </li>
         </ul>
-      </nav>
-    </header>
+      </div>
+    </div>
 
-    <main>
+    <div class="main">
       <section id="beranda" class="carousel">
         <div class="carousel-item active">
-          <h2>Berita 1</h2>
-          <p>Deskripsi berita 1...</p>
+          <h2>Penerimaan Santri Baru</h2>
+          <p>Pondok pesantren Al-Qodiriyah sudah membuka penerimaan santri baru</p>
         </div>
         <div class="carousel-item">
           <h2>Berita 2</h2>
@@ -57,10 +59,10 @@
         <h2>Sejarah</h2>
         <p>Sejarah sekolah...</p>
       </section>
-    </main>
+    </div>
 
-    <footer>
-      <p>&copy; 2024 Sekolah Kami. All rights reserved.</p>
-    </footer>
+    <div class="footer">
+      <p>&copy; 2024 PP Al-Qodiriyah. All rights reserved.</p>
+    </div>
   </body>
 </html>

@@ -19,6 +19,14 @@ function prevSlide() {
   showSlide(currentSlide);
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  showSlide(currentSlide);
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdowns = document.querySelectorAll(".dropdown > a");
+
+  dropdowns.forEach((dropdown) => {
+    dropdown.addEventListener("click", function (event) {
+      event.preventDefault();
+      const parent = this.parentElement;
+      parent.classList.toggle("active");
+    });
+  });
 });

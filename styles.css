@@ -4,13 +4,14 @@ body {
   padding: 0;
   background-color: #f0f9f4;
 }
-
+/* toon warna */
 :root {
   --bg-color: #2e8b57;
-  --hover-color: #1e6b47; /* Background color for hover */
-  --font-hover-color: #000; /* Font color for hover */
+  --hover-color: #269c65;
+  --font-hover-color: #000;
 }
 
+/* navbar */
 .header {
   background-color: var(--bg-color);
   color: white;
@@ -97,13 +98,14 @@ body {
   display: block;
   opacity: 1;
   visibility: visible;
-  top: 120%;
+  top: 100%;
 }
 
 .nav .nav-links .arrow-down {
   margin-left: 5px;
 }
 
+/* beranda */
 .main {
   padding-top: 70px; /* Adjust to height of the navbar */
 }
@@ -121,7 +123,7 @@ body {
   padding: 50px;
   background-size: cover;
   background-position: center;
-  color: var(--font-hover-color);
+  color: black;
   background-size: contain;
   animation: fade 1s ease-in-out; /* Add animation */
 }
@@ -158,7 +160,8 @@ body {
   right: 10px;
 }
 
-#sejarah {
+/* profil ponpes */
+#profil {
   margin-left: 50px;
   margin-top: 40px;
   margin-bottom: 40px;

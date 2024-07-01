@@ -66,11 +66,11 @@ body {
   color: var(--font-hover-color); /* Hover effect for main menu items */
 }
 
+/* dropdown */
 .nav .nav-links .dropdown-content {
-  display: none;
   position: absolute;
   background-color: var(--bg-color);
-  top: 100%;
+  top: 50%;
   left: 0;
   list-style: none;
   padding: 0;
@@ -98,7 +98,7 @@ body {
   display: block;
   opacity: 1;
   visibility: visible;
-  top: 100%;
+  top: 95%;
 }
 
 .nav .nav-links .arrow-down {
@@ -165,6 +165,19 @@ body {
   margin-left: 50px;
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+.profil-content {
+  display: flex;
+  flex-direction: row;
+}
+.profil-content p {
+  padding-left: 20px;
+  padding-top: 100px;
+}
+
+.img-profil {
+  width: 300px;
 }
 
 .footer {

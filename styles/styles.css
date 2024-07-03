@@ -223,6 +223,16 @@ body {
   color: white;
   text-align: left;
   margin-top: 0px;
+  height: 30px;
+  margin: 0px 0px;
+}
+
+.a-foot:hover {
+  text-decoration: underline;
+}
+.a-foot p {
+  height: auto;
+  margin: 5px 0px;
 }
 
 .a-sec2 {
@@ -230,6 +240,10 @@ body {
   color: white;
   text-decoration: none;
   margin-bottom: 0px;
+}
+.a-sec2:hover {
+  transition: 0.5s linear;
+  text-decoration: underline;
 }
 .h4-foot {
   padding-bottom: 0px;

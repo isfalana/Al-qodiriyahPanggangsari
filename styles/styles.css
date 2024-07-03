@@ -212,19 +212,34 @@ body {
   height: auto;
   padding-right: 10px;
 }
+.svg-email {
+  width: 20px;
+  height: auto;
+}
 
 .a-foot {
   display: flex;
-  justify-content: center;
   text-decoration: none;
   color: white;
+  text-align: left;
+  margin-top: 0px;
 }
 
+.a-sec2 {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 0px;
+}
 .h4-foot {
   padding-bottom: 0px;
   height: 10px;
+  padding: 0px;
+  margin-bottom: 20px;
+  text-align: left;
 }
 
 .p-sec2 {
   text-align: left;
+  margin: 0px;
 }

@@ -180,10 +180,47 @@ body {
   width: 300px;
 }
 
+/* footer */
+
 .footer {
   background-color: var(--bg-color);
   color: white;
   text-align: center;
   padding: 20px;
   bottom: 0;
+}
+
+.div-footer {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+  justify-content: space-between;
+}
+.left-foot {
+  display: flex;
+  flex-direction: row;
+}
+
+.img-foot {
+  width: 150px;
+}
+
+.svg-footer {
+  width: 20px;
+  height: auto;
+  padding-right: 10px;
+}
+
+.a-foot {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+}
+
+.h4-foot {
+  padding-bottom: 0px;
+  height: 10px;
 }

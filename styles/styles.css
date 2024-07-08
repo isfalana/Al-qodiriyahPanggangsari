@@ -9,6 +9,8 @@ body {
   --bg-color: #2e8b57;
   --hover-color: #269c65;
   --font-hover-color: #000;
+  --corousel-color: #d0d0d0;
+  --corousel-hover-color: #ffffff;
 }
 
 /* navbar */
@@ -151,13 +153,32 @@ body {
   padding: 10px;
   cursor: pointer;
 }
+/* button-of-carousel */
 
 .carousel-control.prev {
   left: 10px;
+  font-size: 60px;
+  background: none;
+  font-weight: bold;
+  color: var(--corousel-color);
+}
+.carousel-control.prev:hover {
+  text-shadow: 0px 0px 8px #000000;
+  color: var(--corousel-hover-color);
+  transition: 0.4s all ease;
 }
 
 .carousel-control.next {
   right: 10px;
+  font-size: 60px;
+  background: none;
+  font-weight: bold;
+  color: var(--corousel-color);
+}
+.carousel-control.next:hover {
+  text-shadow: 0px 0px 8px #000000;
+  color: var(--corousel-hover-color);
+  transition: 0.4s all ease;
 }
 
 /* profil ponpes */
